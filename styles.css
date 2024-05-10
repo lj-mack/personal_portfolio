@@ -14,6 +14,7 @@ body {
 
 p {
     font-style: oblique;
+    font-size: 20pt;
 }
 
 h1 {
@@ -25,7 +26,7 @@ h1 {
     top: 0;
     background-color: #fff;
     z-index: 2;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,35 +49,37 @@ h1 {
     margin-left: auto;
 }
 
-/* Navigation styles */
 nav {
-    background-color: #846e80;
-    color: #fff;
     text-align: center;
-    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #846e80;
+    z-index: 100;
 }
 
-nav ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    font-size: 14pt;
 }
 
-nav li {
+li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 90pt;
 }
 
-nav a {
+a {
+    display: inline-block;
+    padding: 20px;
     color: #fff;
     text-decoration: none;
-    font-size: 20pt;
-    margin: 0;
-    padding: 50pt;
 }
 
-nav a:hover {
-    background-color: #444;
+/* Hover effect for navigation links */
+a:hover {
+    background-color: rgb(255, 187, 198);
 }
 
 /* Main content container */
@@ -114,6 +117,24 @@ nav a:hover {
 img {
     border-radius: 50%;
 }
+
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+}
+
+td, th {
+    border: 1px solid #000;
+    padding: 2%;
+}   
 
 footer {
     background-color: #846e80;
@@ -153,20 +174,16 @@ footer {
 
 .writing-links a {
     display: inline-block;
-    margin-bottom: 20px; /* Add spacing between writing links */
+    margin-bottom: 20px; 
     text-decoration: none;
-    color: #333; /* Adjust text color */
+    color: #333;
 }
 
 .writing-links img {
     display: block;
-    width: 140px; /* Set image width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Add border radius */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
-    transition: transform 0.3s ease-in-out; /* Add smooth transition */
-}
-
-.writing-links img:hover {
-    transform: scale(1.05); /* Scale up on hover */
+    width: 200px;
+    height: auto; 
+    border-radius: 50%;
+    box-shadow: rgb(255, 187, 198);
+    transition: transform 0.3s ease-in-out; 
 }
